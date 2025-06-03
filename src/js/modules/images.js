@@ -23,7 +23,7 @@ const images = () => {
         max-height: 100%;
         object-fit: contain;
         box-shadow: 0 0 15px rgba(255,255,255,0.2);
-        border-radius: 8px;
+        border-radius: 16px;
     `;
 
     imgPopup.appendChild(bigImage);
