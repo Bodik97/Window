@@ -1,4 +1,4 @@
-const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
+const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display = 'block') => {
     const header = document.querySelector(headerSelector),
             tab = document.querySelectorAll(tabSelector),
             content = document.querySelectorAll(contentSelector);
@@ -14,7 +14,7 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
     }
 
     function showTabContent (i = 0) {
-        content[i].style.display = 'block'; // якщо добавити значення flex . тоді верстка може зїхати
+        content[i].style.display = display; // якщо добавити значення flex . тоді верстка може зїхати
         tab[i].classList.add(activeClass);
     
     }
