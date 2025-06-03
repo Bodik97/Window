@@ -54,7 +54,7 @@ gulp.task("copy-assets", () => {
 gulp.task("watch", () => { // В середині нього запускаємо окремий сервер для dist 
     browsersync.init({
 		server: "./dist/",
-		port: 4000,
+		port: 3000,
 		notify: true
     });
     
