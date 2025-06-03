@@ -4,8 +4,8 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-// const dist = "./dist/";
-const dist = "C:/MAMP/htdocs/test";
+ const dist = "./dist/";
+// const dist = "C:/MAMP/htdocs/test";
 // Відслідковування змін , які вносимо в html файл
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -54,7 +54,7 @@ gulp.task("copy-assets", () => {
 gulp.task("watch", () => { // В середині нього запускаємо окремий сервер для dist 
     browsersync.init({
 		server: "./dist/",
-		port: 3000,
+		port: 4000,
 		notify: true
     });
     
